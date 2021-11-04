@@ -1,3 +1,6 @@
+@use "./variables" as *;
+@use "./shared/bottomBanner";
+
 *,
 *:before,
 *:after {
@@ -6,12 +9,18 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: aquamarine;
+  min-height: 100vh;
+  font-family: $font-family;
+  background-color: $brick;
+  font-size: 15px;
+}
+
+#root,
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
 }
