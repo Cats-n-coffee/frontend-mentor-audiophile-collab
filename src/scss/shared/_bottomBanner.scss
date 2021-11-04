@@ -1,0 +1,45 @@
+@use "../variables" as *;
+
+.bottomBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  padding: 2em;
+
+  &__image {
+    source,
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  }
+
+  &__description {
+  }
+
+  &__title {
+    font-size: $medium-big;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+
+    span {
+      color: $brick;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: $small;
+    line-height: 1.7rem;
+  }
+
+  @media all and (min-width: $desktop) {
+    flex-direction: row-reverse;
+  }
+}
