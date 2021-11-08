@@ -1,5 +1,9 @@
+// Variables
 @use "./variables" as *;
+
+// Shared
 @use "./shared/bottomBanner";
+@use "../components/sharedComponents/categoriesMenu";
 
 *,
 *:before,
