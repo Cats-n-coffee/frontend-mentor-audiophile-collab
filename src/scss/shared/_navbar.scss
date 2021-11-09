@@ -1,0 +1,22 @@
+@use "../variables" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+
+  &__item {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+  }
+
+  &__item:hover {
+    color: $brick;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

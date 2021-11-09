@@ -1,0 +1,41 @@
+@use "../variables" as *;
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: $light-black;
+  color: $white;
+  //   need to be adjusted if body has padding or margin
+  padding: 50px 100px 40px 100px;
+
+  &__description {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.02rem;
+    line-height: 1.7rem;
+    opacity: 50%;
+    padding-top: 50px;
+  }
+
+  &__copyright {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.02rem;
+    flex-grow: 2;
+    opacity: 50%;
+    padding-top: 50px;
+  }
+
+  &__icons {
+    align-self: flex-end;
+    padding-left: 150px;
+  }
+}
+
+.footer > * {
+  flex-basis: 50%;
+}
+
+@media min-width {
+}

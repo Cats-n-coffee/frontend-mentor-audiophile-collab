@@ -1,5 +1,7 @@
 @use "./variables" as *;
 @use "./shared/bottomBanner";
+@use "./shared/footer";
+@use "./shared/navbar";
 
 *,
 *:before,
