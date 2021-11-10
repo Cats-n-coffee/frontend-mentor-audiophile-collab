@@ -1,0 +1,41 @@
+@use "../variables/variables" as *;
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: $font-family;
+  background-color: $brick;
+  font-size: 15px;
+}
+
+#root {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+
+  @media all and (min-width: 650px) {
+    max-width: 650px;
+  }
+
+  @media all and (min-width: 1200px) {
+    max-width: 1000px;
+  }
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  justify-items: center;
+  align-items: center;
+}
