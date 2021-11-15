@@ -8,6 +8,7 @@ export default function Footer() {
       <section className="upper"></section>
       <footer className="footer">
         <div>Logo placeholder</div>
+        {/* <StoreLogo /> */}
         <Navbar />
         <div className="footer__description">
           Audiophile is an all in one stop to fulfill your audio needs. We're a

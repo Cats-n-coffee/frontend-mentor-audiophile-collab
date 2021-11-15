@@ -3,6 +3,7 @@
 .navbar {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
 
   &__item {
     font-size: 0.8rem;
@@ -13,6 +14,10 @@
 
   &__item:hover {
     color: $brick;
+  }
+
+  @media all and (max-width: $mobile) {
+    flex-direction: column;
   }
 }
 

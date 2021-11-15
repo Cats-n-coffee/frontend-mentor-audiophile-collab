@@ -3,6 +3,7 @@
 .footer {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
   flex-wrap: wrap;
   background-color: $light-black;
   color: $white;
@@ -31,11 +32,13 @@
     align-self: flex-end;
     padding-left: 150px;
   }
+
+  @media all and (max-width: $tablet) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 
 .footer > * {
   flex-basis: 50%;
-}
-
-@media min-width {
 }
