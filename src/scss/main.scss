@@ -1,28 +1,7 @@
+// Variables
 @use "./variables" as *;
-@use "./shared/bottomBanner";
-@use "./shared/footer";
-@use "./shared/navbar";
 
-*,
-*:before,
-*:after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  min-height: 100vh;
-  font-family: $font-family;
-  background-color: $brick;
-  font-size: 15px;
-}
-
-#root,
-.App {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: auto minmax(0, 1fr) auto;
-}
+// Shared
+@use "./shared/containers";
+@use "../components/sharedComponents/bottomBanner";
+@use "../components/sharedComponents/categoriesMenu";

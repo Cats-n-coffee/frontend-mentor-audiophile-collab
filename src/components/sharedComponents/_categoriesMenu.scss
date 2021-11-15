@@ -1,0 +1,84 @@
+@use "../../scss/variables/variables" as *;
+
+.categoriesMenu {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+
+    @media all and (min-width: $tablet) {
+      flex-direction: row;
+      gap: 1em;
+    }
+  }
+
+  &__listitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: $light-grey;
+    padding: 3em 0 1.5em 0;
+    position: relative;
+
+    @media all and (min-width: $desktop) {
+      padding: 5em 0 2em 0;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      max-width: 80px;
+      position: absolute;
+      top: -25%;
+
+      @media all and (min-width: $desktop) {
+        max-width: 123px;
+      }
+    }
+
+    &__title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      text-align: center;
+      color: $black;
+
+      @media all and (min-width: $desktop) {
+        font-size: 0.85rem;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+
+      span {
+        color: $black-half-opacity;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        transition: 500ms;
+
+        &:hover {
+          color: $brick;
+        }
+      }
+
+      @media all and (min-width: $desktop) {
+        span {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
