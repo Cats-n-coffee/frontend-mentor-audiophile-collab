@@ -35,6 +35,10 @@
     flex-direction: row;
     flex-wrap: wrap;
 
+    &__description {
+      text-align: start;
+    }
+
     &__copyright {
       order: 5;
     }
