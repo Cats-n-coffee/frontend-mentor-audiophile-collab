@@ -2,20 +2,19 @@
 
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   background-color: $light-black;
   color: $white;
   //   need to be adjusted if body has padding or margin
   padding: 0rem 2rem 3rem 2rem;
-  // &__logo {
-  //   padding: 1rem 0 0 0;
-  // }
+
   &__description {
     font-size: 0.9rem;
     font-weight: 300;
     letter-spacing: 0.02rem;
     line-height: 1.7rem;
     opacity: 50%;
+    text-align: center;
   }
 
   &__copyright {
@@ -29,12 +28,20 @@
     order: 5;
   }
 
+  &__icons > * {
+    margin: 0.5rem;
+  }
   @media all and (min-width: $desktop) {
     flex-direction: row;
     flex-wrap: wrap;
 
     &__copyright {
       order: 5;
+    }
+
+    &__icons {
+      text-align: right;
+      align-self: flex-end;
     }
   }
 
@@ -46,4 +53,10 @@
 .footer > * {
   flex-basis: 50%;
   padding-top: 3.5rem;
+}
+
+.upper {
+  background-color: $brick;
+  width: 50px;
+  height: 5px;
 }

@@ -2,8 +2,8 @@
 
 .navbar {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
-  padding-top: 2rem;
 
   &__item {
     font-size: 0.8rem;
@@ -29,7 +29,8 @@
   }
 
   @media all and (min-width: $desktop) {
-    padding-right: 10%;
+    padding-right: 0%;
+    padding-left: 10%;
   }
 }
 

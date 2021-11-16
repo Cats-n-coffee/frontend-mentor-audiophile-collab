@@ -1,12 +1,15 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { Logo } from "../icons/Icons";
+import { Facebook } from "../icons/Icons";
+import { Instagram } from "../icons/Icons";
+import { Twitter } from "../icons/Icons";
+
 // import StoreLogo from "./StoreLogo";
 
 export default function Footer() {
   return (
     <React.Fragment>
-      <section className="upper"></section>
       <footer className="footer">
         <div className="footer__logo">
           <Logo />
@@ -19,7 +22,11 @@ export default function Footer() {
           helping you get the most out of personal audio. Come and visit our
           demo facility - we’re open 7 days a week.
         </div>
-        <div className="footer__icons">Placeholder for social media icons</div>
+        <div className="footer__icons">
+          <Facebook />
+          <Twitter />
+          <Instagram />
+        </div>
         <div className="footer__copyright">
           Copyright 2021. All Rights Reserved
         </div>
