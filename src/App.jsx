@@ -1,5 +1,6 @@
 import BottomBanner from "./components/sharedComponents/BottomBanner";
 import CategoriesMenu from "./components/sharedComponents/CategoriesMenu";
+import Footer from "./components/sharedComponents/Footer";
 import "./scss/main.scss";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <CategoriesMenu />
         <BottomBanner />
       </main>
+      <Footer />
     </div>
   );
 }

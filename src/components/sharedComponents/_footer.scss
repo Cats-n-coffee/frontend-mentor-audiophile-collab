@@ -1,44 +1,49 @@
-@use "../variables" as *;
+@use "../../scss/variables/variables" as *;
 
 .footer {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   background-color: $light-black;
   color: $white;
   //   need to be adjusted if body has padding or margin
-  padding: 50px 100px 40px 100px;
-
+  padding: 0rem 2rem 3rem 2rem;
+  // &__logo {
+  //   padding: 1rem 0 0 0;
+  // }
   &__description {
     font-size: 0.9rem;
     font-weight: 300;
     letter-spacing: 0.02rem;
     line-height: 1.7rem;
     opacity: 50%;
-    padding-top: 50px;
   }
 
   &__copyright {
     font-size: 0.9rem;
     font-weight: 300;
     letter-spacing: 0.02rem;
-    flex-grow: 2;
     opacity: 50%;
-    padding-top: 50px;
   }
 
   &__icons {
-    align-self: flex-end;
-    padding-left: 150px;
+    order: 5;
+  }
+
+  @media all and (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__copyright {
+      order: 5;
+    }
   }
 
   @media all and (max-width: $tablet) {
-    flex-direction: column;
-    flex-wrap: nowrap;
+    align-items: center;
   }
 }
 
 .footer > * {
   flex-basis: 50%;
+  padding-top: 3.5rem;
 }

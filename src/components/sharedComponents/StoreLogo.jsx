@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Logo } from "./assets/shared/desktop/logo.svg";
+import { Logo } from "../icons/Icons";
 
 export default function StoreLogo() {
   return (

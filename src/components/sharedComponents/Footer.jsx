@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { Logo } from "../icons/Icons";
 // import StoreLogo from "./StoreLogo";
 
 export default function Footer() {
@@ -7,7 +8,9 @@ export default function Footer() {
     <React.Fragment>
       <section className="upper"></section>
       <footer className="footer">
-        <div>Logo placeholder</div>
+        <div className="footer__logo">
+          <Logo />
+        </div>
         {/* <StoreLogo /> */}
         <Navbar />
         <div className="footer__description">
