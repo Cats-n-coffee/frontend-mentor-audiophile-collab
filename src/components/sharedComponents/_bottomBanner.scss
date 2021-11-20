@@ -7,17 +7,44 @@
   justify-content: center;
   background-color: $white;
   padding: 2em;
+  max-height: 650px;
 
   &__image {
-    source,
+    width: 100%;
+    align-self: stretch;
+    overflow: hidden;
+    flex-grow: 1;
+
+    position: relative;
+
     img {
       width: 100%;
       height: auto;
+      max-width: 350px;
       border-radius: 5px;
+      display: inline-block;
+      object-fit: scale-down;
+
+      @media all and (min-width: $tablet) {
+        max-width: 600px;
+      }
+
+      @media all and (min-width: $desktop) {
+        position: absolute;
+        left: -70%;
+        top: -10%;
+        max-width: unset;
+        width: 1378px;
+        height: 600px;
+      }
     }
   }
 
   &__description {
+    @media all and (min-width: $desktop) {
+      max-width: 50%;
+      padding: 5em 5em 5em 0;
+    }
   }
 
   &__title {
@@ -31,15 +58,24 @@
     span {
       color: $brick;
     }
+    @media all and (min-width: $desktop) {
+      text-align: left;
+    }
   }
 
   &__text {
     text-align: center;
     font-size: $small;
     line-height: 1.7rem;
+    color: $black-half-opacity;
+
+    @media all and (min-width: $desktop) {
+      text-align: left;
+    }
   }
 
   @media all and (min-width: $desktop) {
     flex-direction: row-reverse;
+    padding: 5em;
   }
 }
