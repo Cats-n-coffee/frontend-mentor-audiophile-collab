@@ -1,5 +1,17 @@
 @use "../../scss/variables/variables" as *;
 
+.footer::before {
+  background-color: $brick;
+  content: " ";
+  height: 4px;
+  width: 101px;
+  position: absolute;
+
+  @media all and (max-width: $tablet) {
+    margin-left: 6.4rem;
+  }
+}
+
 .footer {
   display: grid;
   grid-template-areas:
@@ -87,10 +99,4 @@
       align-self: end;
     }
   }
-}
-
-.upper {
-  background-color: $brick;
-  width: 50px;
-  height: 5px;
 }
