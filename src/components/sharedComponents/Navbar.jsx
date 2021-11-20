@@ -10,7 +10,7 @@ function Navbar() {
         <a href="/">Headphones</a>
       </h6>
       <h6 className="navbar__item">
-        <a href="/">Spekers</a>
+        <a href="/">Speakers</a>
       </h6>
       <h6 className="navbar__item">
         <a href="/">Earphones</a>

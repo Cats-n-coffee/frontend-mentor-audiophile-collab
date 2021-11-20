@@ -15,7 +15,7 @@ export default function Footer() {
           <Logo />
         </div>
         {/* <StoreLogo /> */}
-        <Navbar />
+        <Navbar className="footer_navbar" />
         <div className="footer__description">
           Audiophile is an all in one stop to fulfill your audio needs. We're a
           small team of music lovers and sound specialists who are devoted to

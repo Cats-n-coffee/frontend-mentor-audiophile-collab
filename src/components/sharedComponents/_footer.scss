@@ -1,42 +1,93 @@
 @use "../../scss/variables/variables" as *;
 
+.footer::before {
+  background-color: $brick;
+  content: " ";
+  height: 4px;
+  width: 101px;
+  position: absolute;
+
+  @media all and (max-width: $tablet) {
+    margin-left: 6.4rem;
+  }
+}
+
 .footer {
-  display: flex;
-  flex-flow: column wrap;
+  display: grid;
+  grid-template-areas:
+    "logo"
+    "navbar"
+    "description"
+    "copyright"
+    "icons";
   background-color: $light-black;
   color: $white;
   //   need to be adjusted if body has padding or margin
   padding: 0rem 2rem 3rem 2rem;
 
+  & > * {
+    flex-basis: 50%;
+    padding-top: 3.5rem;
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__navbar {
+    grid-area: navbar;
+  }
+
   &__description {
-    font-size: 0.9rem;
-    font-weight: 300;
+    grid-area: description;
+    font-size: 0.85rem;
+    font-weight: 100;
     letter-spacing: 0.02rem;
     line-height: 1.7rem;
     opacity: 50%;
-    text-align: center;
   }
 
   &__copyright {
+    grid-area: copyright;
+    align-self: center;
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 0.02rem;
     opacity: 50%;
   }
 
   &__icons {
+    grid-area: icons;
     order: 5;
   }
 
   &__icons > * {
     margin: 0.5rem;
   }
+
+  @media all and (max-width: $tablet) {
+    & > * {
+      text-align: center;
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    grid-template-areas: "logo logo" "navbar navbar" "description description" "copyright icons";
+    & > * {
+      text-align: left;
+    }
+
+    &__icons {
+      text-align: right;
+    }
+  }
+
   @media all and (min-width: $desktop) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo navabr" "description icons" "copyright copyright";
 
     &__description {
-      text-align: start;
+      text-align: left;
     }
 
     &__copyright {
@@ -45,22 +96,7 @@
 
     &__icons {
       text-align: right;
-      align-self: flex-end;
+      align-self: end;
     }
   }
-
-  @media all and (max-width: $tablet) {
-    align-items: center;
-  }
-}
-
-.footer > * {
-  flex-basis: 50%;
-  padding-top: 3.5rem;
-}
-
-.upper {
-  background-color: $brick;
-  width: 50px;
-  height: 5px;
 }
