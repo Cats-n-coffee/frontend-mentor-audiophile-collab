@@ -7,14 +7,12 @@
   justify-content: center;
   background-color: $white;
   padding: 2em;
-  max-height: 650px;
 
   &__image {
     width: 100%;
     align-self: stretch;
     overflow: hidden;
     flex-grow: 1;
-
     position: relative;
 
     img {
@@ -27,15 +25,6 @@
 
       @media all and (min-width: $tablet) {
         max-width: 600px;
-      }
-
-      @media all and (min-width: $desktop) {
-        position: absolute;
-        left: -70%;
-        top: -10%;
-        max-width: unset;
-        width: 1378px;
-        height: 600px;
       }
     }
   }

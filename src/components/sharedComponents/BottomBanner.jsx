@@ -7,12 +7,16 @@ export default function BottomBanner(props) {
     <section className="bottomBanner">
       <picture className="bottomBanner__image">
         <source
-          media="(min-width:650px)"
+          media="(max-width:650px)"
+          srcSet="assets/shared/mobile/image-best-gear.jpg"
+        />
+        <source
+          media="(max-width:1200px)"
           srcSet="assets/shared/tablet/image-best-gear.jpg"
         />
         <source
           media="(min-width:1200px)"
-          srcSet="assets/shared/mobile/image-best-gear.jpg"
+          srcSet="assets/shared/desktop/image-best-gear.jpg"
         />
         <img
           src="assets/shared/mobile/image-best-gear.jpg"
@@ -20,17 +24,6 @@ export default function BottomBanner(props) {
         />
       </picture>
 
-      {/* <img
-        className="bottomBanner__image"
-        src="./assets/shared/mobile/image-best-gear.jpg"
-        srcSet="./assets/shared/mobile/image-best-gear.jpg 654w,
-                ./assets/shared/tablet/image-best-gear.jpg 1378w,
-                ./assets/shared/desktop/image-best-gear.jpg 540w"
-        sizes="(max-width: 650px) 80vw,
-                (min-width: 650px) 80vw,
-                (min-width: 1200px) 30vw"
-        alt="Person using our Mark 2 heaphones"
-      /> */}
       <div className="bottomBanner__description">
         <h3 className="bottomBanner__title">
           Bringing you the <span>best</span> audio gear
