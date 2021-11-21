@@ -1,8 +1,6 @@
 import React from "react";
-import data from "../../data.json";
 
 export default function BottomBanner(props) {
-  console.log(data);
   return (
     <section className="bottomBanner">
       <picture className="bottomBanner__image">
