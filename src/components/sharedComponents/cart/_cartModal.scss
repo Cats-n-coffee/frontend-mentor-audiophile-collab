@@ -35,9 +35,18 @@
   }
 
   &__totalWrapper {
+    h3 {
+      color: $black-half-opacity;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      font-weight: 400;
+      font-size: 1rem;
+    }
   }
 
   &__totalAmount {
+    font-weight: 700;
+    font-size: 1.2rem;
   }
 
   .btn__checkout {
