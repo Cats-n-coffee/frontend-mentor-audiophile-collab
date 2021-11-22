@@ -7,3 +7,7 @@
 @use "../components/sharedComponents/categoriesMenu";
 @use "../components/sharedComponents/footer";
 @use "../components/sharedComponents/navbar";
+// Cart
+@use "../components/sharedComponents/cart/cartModal";
+@use "../components/sharedComponents/cart/itemContainer";
+@use "../components/sharedComponents/cart/itemRow";
