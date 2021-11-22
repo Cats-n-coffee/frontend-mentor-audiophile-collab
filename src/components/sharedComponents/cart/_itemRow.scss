@@ -1,0 +1,13 @@
+.itemRow {
+  display: flex;
+  list-style: none;
+
+  &__itemDetails {
+    display: flex;
+  }
+
+  &__itemQty {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -24,11 +24,11 @@ const tempCart = [
 
 export default function ItemContainer() {
   return tempCart.length ? (
-    <section>
+    <ul>
       {tempCart.map((item) => (
         <ItemRow key={item.id} item={item} />
       ))}
-    </section>
+    </ul>
   ) : (
     "No item in the cart"
   );

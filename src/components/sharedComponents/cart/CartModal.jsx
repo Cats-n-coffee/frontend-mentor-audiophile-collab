@@ -6,19 +6,23 @@ Note: when finishing this component, remove the button inside App.js, remove the
 from #App
 */
 
-export default function CartModal() {
+export default function CartModal(props) {
+  const { setShowCart } = props;
+
   return (
-    <section className="cartModal">
-      <div className="spacedItems cartModal__titleWrapper">
-        <h2>Cart (num)</h2>
-        <button className="cartModal__removeButton">Remove All</button>
-      </div>
-      <ItemContainer />
-      <div className="spacedItems cartModal__totalWrapper">
-        <h3>Total</h3>
-        <p className="cartModal__totalAmount">$ 5,342</p>
-      </div>
-      <button className="btn btn__checkout">Checkout</button>
-    </section>
+    <div className="cartModalWrapper" onClick={() => setShowCart(false)}>
+      <section className="cartModal">
+        <div className="spacedItems cartModal__titleWrapper">
+          <h2>Cart (num)</h2>
+          <button className="cartModal__removeButton">Remove All</button>
+        </div>
+        <ItemContainer />
+        <div className="spacedItems cartModal__totalWrapper">
+          <h3>Total</h3>
+          <p className="cartModal__totalAmount">$ 5,342</p>
+        </div>
+        <button className="btn btn__checkout">Checkout</button>
+      </section>
+    </div>
   );
 }

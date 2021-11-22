@@ -10,13 +10,10 @@ function App() {
   return (
     <div className="App">
       <h1 style={{ padding: "2em 0" }}>Audiophile app</h1>
-      <button
-        onClick={() => setShowCart(!showCart)}
-        style={{ marginBottom: "4em" }}
-      >
+      <button onClick={() => setShowCart(true)} style={{ marginBottom: "4em" }}>
         toggle cart modal
       </button>
-      {showCart && <CartModal />}
+      {showCart && <CartModal setShowCart={setShowCart} />}
       <main>
         <CategoriesMenu />
         <BottomBanner />
