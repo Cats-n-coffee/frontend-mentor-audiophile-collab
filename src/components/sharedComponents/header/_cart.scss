@@ -1,0 +1,5 @@
+@use "../../../scss/variables/variables" as *;
+
+.button {
+  background-color: &black;
+}
