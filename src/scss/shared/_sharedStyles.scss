@@ -1,0 +1,10 @@
+@use "../variables/variables" as *;
+
+.btn {
+  padding: 1em 2em;
+  border: none;
+  background-color: $brick;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: $white;
+}
