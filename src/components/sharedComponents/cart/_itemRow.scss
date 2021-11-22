@@ -1,3 +1,5 @@
+@use "../../../scss/variables/variables" as *;
+
 .itemRow {
   display: flex;
   justify-content: space-between;
@@ -13,14 +15,58 @@
       height: auto;
       border-radius: 8px;
     }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-left: 1em;
+
+      h4 {
+        color: $black;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      p {
+        color: $black-half-opacity;
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+    }
   }
 
   &__itemQty {
     display: flex;
     align-items: center;
+    background-color: $light-grey;
+
+    .qtyBtn {
+      width: 32px;
+      height: 32px;
+      background-color: unset;
+      border: none;
+      color: $black-half-opacity;
+      cursor: pointer;
+      transition: 500ms;
+
+      &:hover {
+        color: $brick;
+      }
+    }
+
+    .qtyDisplay {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
   }
 
   &:not(:first-child) {
-    margin-top: 1.2em;
+    margin-top: 1.4em;
   }
 }
