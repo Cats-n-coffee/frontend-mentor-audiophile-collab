@@ -24,7 +24,7 @@ const tempCart = [
 
 export default function ItemContainer() {
   return tempCart.length ? (
-    <ul>
+    <ul className="itemList">
       {tempCart.map((item) => (
         <ItemRow key={item.id} item={item} />
       ))}
