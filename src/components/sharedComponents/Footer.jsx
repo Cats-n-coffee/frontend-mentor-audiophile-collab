@@ -23,9 +23,15 @@ export default function Footer() {
           demo facility - we’re open 7 days a week.
         </div>
         <div className="footer__icons">
-          <Facebook />
-          <Twitter />
-          <Instagram />
+          <a href="/">
+            <Facebook />
+          </a>
+          <a href="/">
+            <Twitter />
+          </a>
+          <a href="/">
+            <Instagram />
+          </a>
         </div>
         <div className="footer__copyright">
           Copyright 2021. All Rights Reserved

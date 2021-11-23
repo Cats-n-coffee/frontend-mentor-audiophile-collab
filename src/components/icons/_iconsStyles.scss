@@ -1,0 +1,8 @@
+@use "../../scss/variables/variables" as *;
+
+.icon {
+  fill: $white;
+}
+.icon:hover {
+  fill: $brick;
+}
