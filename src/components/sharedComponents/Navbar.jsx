@@ -3,18 +3,10 @@ import React from "react";
 function Navbar() {
   return (
     <nav className="navbar">
-      <h6 className="navbar__item">
-        <a href="/">Home</a>
-      </h6>
-      <h6 className="navbar__item">
-        <a href="/">Headphones</a>
-      </h6>
-      <h6 className="navbar__item">
-        <a href="/">Speakers</a>
-      </h6>
-      <h6 className="navbar__item">
-        <a href="/">Earphones</a>
-      </h6>
+      <a href="/">Home</a>
+      <a href="/">Headphones</a>
+      <a href="/">Speakers</a>
+      <a href="/">Earphones</a>
     </nav>
   );
 }
