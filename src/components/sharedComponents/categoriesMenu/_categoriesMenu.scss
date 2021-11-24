@@ -7,6 +7,8 @@
     justify-content: center;
     align-items: center;
     gap: 4em;
+    padding: 3em 0;
+    background-color: $white;
 
     @media all and (min-width: $tablet) {
       flex-direction: row;
