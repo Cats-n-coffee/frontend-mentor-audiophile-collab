@@ -4,10 +4,11 @@
 // Shared
 @use "./shared/containers";
 @use "./shared/sharedStyles";
-@use "../components/sharedComponents/bottomBanner";
-@use "../components/sharedComponents/categoriesMenu";
-@use "../components/sharedComponents/footer";
-@use "../components/sharedComponents/navbar";
+@use "../components/sharedComponents/bottomBanner/bottomBanner";
+@use "../components/sharedComponents/categoriesMenu/categoriesMenu";
+@use "../components/sharedComponents/footer/footer";
+@use "../components/sharedComponents/navbar/navbar";
+@use "../components/icons/iconsStyles";
 // Cart
 @use "../components/sharedComponents/cart/cartModal";
 @use "../components/sharedComponents/cart/itemContainer";

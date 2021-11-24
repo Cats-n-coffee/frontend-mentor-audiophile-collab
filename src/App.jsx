@@ -1,8 +1,8 @@
 import React from "react";
-import BottomBanner from "./components/sharedComponents/BottomBanner";
 import CartModal from "./components/sharedComponents/cart/CartModal";
-import CategoriesMenu from "./components/sharedComponents/CategoriesMenu";
-import Footer from "./components/sharedComponents/Footer";
+import BottomBanner from "./components/sharedComponents/bottomBanner/BottomBanner";
+import CategoriesMenu from "./components/sharedComponents/categoriesMenu/CategoriesMenu";
+import Footer from "./components/sharedComponents/footer/Footer";
 import "./scss/main.scss";
 
 function App() {

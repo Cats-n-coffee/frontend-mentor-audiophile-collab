@@ -1,4 +1,4 @@
-@use "../../scss/variables/variables" as *;
+@use "../../../scss/variables/variables" as *;
 
 .footer::before {
   background-color: $brick;
@@ -26,7 +26,6 @@
   padding: 0rem 2rem 3rem 2rem;
 
   & > * {
-    flex-basis: 50%;
     padding-top: 3.5rem;
   }
 
@@ -50,10 +49,9 @@
   &__copyright {
     grid-area: copyright;
     align-self: center;
-    font-size: 0.9rem;
     font-weight: 500;
-    letter-spacing: 0.02rem;
     opacity: 50%;
+    width: inherit;
   }
 
   &__icons {
@@ -73,6 +71,7 @@
 
   @media all and (min-width: $tablet) {
     grid-template-areas: "logo logo" "navbar navbar" "description description" "copyright icons";
+
     & > * {
       text-align: left;
     }
