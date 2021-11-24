@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1 style={{ padding: "2em 0" }}>Audiophile app</h1>
       <main>
-        <CategoryPage />
+        <CategoryPage category="headphones" />
       </main>
       <Footer />
     </div>
