@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   background-color: $white;
-  padding: 2em;
+  padding: 2em 0;
 
   &__image {
     width: 100%;
@@ -24,7 +24,7 @@
       object-fit: scale-down;
 
       @media all and (min-width: $tablet) {
-        max-width: 600px;
+        max-width: 650px;
       }
     }
   }
@@ -62,6 +62,10 @@
       text-align: left;
     }
   }
+
+  // @media all and (min-width: $tablet) {
+  //   padding: 2em;
+  // }
 
   @media all and (min-width: $desktop) {
     flex-direction: row-reverse;
