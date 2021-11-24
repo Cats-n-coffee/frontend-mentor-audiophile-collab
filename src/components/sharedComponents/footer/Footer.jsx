@@ -1,8 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
-import { Logo, Facebook, Instagram, Twitter } from "../icons/Icons";
-
-// import StoreLogo from "./StoreLogo";
+import Navbar from "../navbar/Navbar";
+import { Logo, Facebook, Instagram, Twitter } from "../../icons/Icons";
 
 export default function Footer() {
   return (

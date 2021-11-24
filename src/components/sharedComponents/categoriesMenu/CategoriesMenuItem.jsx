@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "../icons/Icons";
+import { ArrowRight } from "../../icons/Icons";
 
 export default function CategoriesMenuItem(props) {
   const { item } = props;
