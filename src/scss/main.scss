@@ -3,9 +3,10 @@
 
 // Shared
 @use "./shared/containers";
-@use "../components/sharedComponents/bottomBanner";
-@use "../components/sharedComponents/categoriesMenu";
-@use "../components/sharedComponents/footer";
-@use "../components/sharedComponents/navbar";
-@use "../components/sharedComponents/header/headerStyle";
+@use "../components/sharedComponents/bottomBanner/bottomBanner";
+@use "../components/sharedComponents/categoriesMenu/categoriesMenu";
+@use "../components/sharedComponents/footer/footer";
+@use "../components/sharedComponents/navbar/navbar";
+@use "../components/sharedComponents/header/header";
 @use "../components/sharedComponents/header/cart";
+@use "../components/icons/iconsStyles";

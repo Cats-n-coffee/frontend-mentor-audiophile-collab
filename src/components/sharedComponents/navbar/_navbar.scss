@@ -1,11 +1,13 @@
-@use "../../scss/variables/variables" as *;
+@use "../../../scss/variables/variables" as *;
 
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
 
-  &__item {
+  & > a {
+    color: inherit;
+    text-decoration: none;
     font-size: 0.8rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -14,17 +16,15 @@
     margin: 1rem;
   }
 
-  &__item:hover {
+  & > a:hover {
     color: $brick;
   }
 
   @media all and (min-width: $tablet) {
     flex-direction: row;
-    justify-content: space-between;
-    padding-right: 10%;
 
-    &__item {
-      margin: 0rem;
+    & > a {
+      margin: 0;
     }
   }
 
@@ -32,9 +32,4 @@
     padding-right: 0%;
     padding-left: 10%;
   }
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }

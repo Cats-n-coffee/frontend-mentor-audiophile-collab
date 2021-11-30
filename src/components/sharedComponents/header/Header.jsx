@@ -1,6 +1,6 @@
 import React from "react";
 import Cart from "./Cart";
-import Navbar from "../Navbar";
+import Navbar from "../navbar/Navbar";
 import { Logo } from "../../icons/Icons";
 
 export default function Header() {
