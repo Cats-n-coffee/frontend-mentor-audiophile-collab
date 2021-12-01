@@ -1,5 +1,6 @@
 @use "../../../scss/variables/variables" as *;
 
-.button {
+button {
+  all: unset;
   background-color: &black;
 }
